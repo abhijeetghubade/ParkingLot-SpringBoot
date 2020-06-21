@@ -88,16 +88,7 @@ public class ParkingLotController {
 		response.setParkingLotNumber(1);
 		return new ResponseEntity<GetParkingLotsResponse>(response, HttpStatus.OK);
 	}
-	
-	@ApiOperation(value="Returns list of cars with same color in the given parking lot")
-	@ApiResponses(value={
-			@ApiResponse(code=200,message="Cars parked in given parking lot retreived"),
-			@ApiResponse(code=401,message="You are not authorized to view the resource"),
-			@ApiResponse(code=403,message="Accessing the resource you were trying to reach is forbidden"),
-			@ApiResponse(code=404,message="The resource you were trying to reach is not found"),
-			@ApiResponse(code=500,message="Internal Server Error")
-	})
-	
+		
 	@ApiOperation(value="Returns the parking lot and the slot number")
 	@ApiResponses(value={
 			@ApiResponse(code=200,message="Car found"),
