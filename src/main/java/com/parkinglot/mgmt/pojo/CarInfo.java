@@ -13,10 +13,5 @@ public class CarInfo {
 	public void setLicenseNumber(Integer licenseNumber) {
 		this.licenseNumber = licenseNumber;
 	}
-
-	public void setColor(String color) {
-		this.color = color;
-	}
-	
 	
 }
