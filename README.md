@@ -26,9 +26,6 @@ nearest or not)
  * GET /parkingLots/<parkingLotNumber>
     - Returns details of a parking lot
     - **Response Format** : {name, capacity, parkingLotNumber, emptySlotCount}
- * GET /parkingLots/<parkingLotNumber>/sameColor
-    - Returns list of cars with same color in the given parking lot
-    - **Response Format** : [{car1}, {car2}, ...]
  * GET /find/<carLicenseNumber>
     - Returns the parking lot and the slot number the car got assigned to for parking
     - **Response Format** : {parkingLotNumber, slotNumber, parkingId}
