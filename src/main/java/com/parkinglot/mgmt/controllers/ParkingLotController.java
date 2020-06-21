@@ -97,6 +97,7 @@ public class ParkingLotController {
 			@ApiResponse(code=404,message="The resource you were trying to reach is not found"),
 			@ApiResponse(code=500,message="Internal Server Error")
 	})
+	
 	@RequestMapping(value = "/find/{carLicenseNumber}", method = RequestMethod.GET, produces = "application/json")
 	public ResponseEntity<FindVehicleResponse> findVehicle(@PathVariable int carLicenseNumber) {
 		FindVehicleResponse resoponse = new FindVehicleResponse();
